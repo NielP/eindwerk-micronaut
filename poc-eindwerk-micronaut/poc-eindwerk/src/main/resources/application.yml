@@ -1,0 +1,19 @@
+micronaut:
+  application:
+    name: pocEindwerk
+  server:
+    port: 8091
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:5432/mytestdb
+    username: mytestdb
+    password: mytestdb
+    driverClassName: org.postgresql.Driver
+    schema-generate: CREATE_DROP
+    dialect: POSTGRES
+netty:
+  default:
+    allocator:
+      max-order: 3
+mongodb:
+  uri: mongodb://localhost:27017/poc_db_micronaut
